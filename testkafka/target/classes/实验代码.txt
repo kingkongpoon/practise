@@ -1,0 +1,57 @@
+bin/kafka-console-producer.sh --broker-list namenode:9092 -topic test1
+
+DROP TABLE test.detail
+
+
+CREATE TABLE detail(
+ did INT(20),
+ uid VARCHAR(8),
+ cost INT(8),
+ atime INT(8)
+)ENGINE=MYISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+
+CREATE TABLE sparktest(
+ text VARCHAR(200),
+ num INT(6),
+ id INT(6)
+)ENGINE=MYISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+
+
+select * from detail
+
+select * from client
+
+select uid from client WHERE uid = "a"
+
+
+"""{"head":{"binlog_pos":10445950,"type":"UPDATE","binlog_file":"mysql-bin.000001","db":"bi_schema","table":"roleuser"}
+,"before":{"update_time":"","roleId":"12","id":"10","userId":"12","add_time":"2018-06-15,14:00:53"}
+,"after":{"update_time":"","roleId":"121","id":"10","userId":"123","add_time":"2018-06-15,14:00:53"}}"""
+
+
+({"head":{"binlog_pos":10446578,"type":"INSERT","binlog_file":"mysql-bin.000001","db":"bi_schema","table":"roleuser"},
+"after":{"update_time":"","roleId":"444","id":"19","userId":"333","add_time":"2018-06-15,1)
+
+
+"{\"error\":\"errorinfo\",\"fliter\":{\"ua\": \"www.baidu.com,www.google.com\",\"uastartsWith\": \"Mozilla,Opera,Linux\",\"uanot\": \"Windows,Android,Mac,iPad,IOS,iPhone\", \"url\": \"404.htm,.css,.js,get_anthor_8,get_news_ranking\",\"refstartsWith\": \"http,-\",\"ref\": \"-\"}}"
+
+
+
+"{\"binlog_pos\":10446578,\"type\":\"INSERT\",\"binlog_file\":\"mysql-bin.000001\",\"db\":\"bi_schema\",\"table\":\"roleuser\"}"
+
+
+"""{"binlog_pos":10445950,"type":"UPDATE","binlog_file":"mysql-bin.000001","db":"bi_schema","table":"roleuser"}"""
+
+{"text":"fff","num":"1"}
+
+
+{"head":{"type":"UPDATE","table":"kafkatest"},"after":{"text":"twins","num":"111"}}
+
+{"head":{"type":"INSERT","table":"kafkatest"},"after":{"text":"caca","num":"86"}}
+
+{"head":{"type":"INSERT","table":"sparktest"},"after":{"id":"1","text":"jump","num":"33"}}
+
+
+{"head":{"type":"INSERT","table":"detail"},"after":{"did":"31","uid":"w","cost":"33","atime":"20180620"}}
+
+{"head":{"type":"INSERT","table":"client"},"after":{"uid":"r","firsttime":"20160321","lasttime":"20160619"}}
